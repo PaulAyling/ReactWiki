@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+/* Pauls CSS */
+h1 {
+  font-size: medium;
+  font-weight: 800;
+  text-align: left;
+  color: #313639;
+}
+h2 {
+  font-size: medium;
+  font-weight: 800;
+  text-align: left;
+  color: #313639;
+}
+p {
+  font-weight: 300;
+  color: #b4b6b8;
+}
+article {
+}
+strong {
+  color: #313639;
+}
+
+ul,
+.container > ul > li {
+  margin-left: 0px;
+}
+
+ul li {
+  margin-left: 13px;
+  color: #4f5456;
+}
+ul .folder {
+  font-weight: 800;
+  margin-left: 0px;
+  color: #313639;
+}
+ul .optional {
+  font-weight: 300;
+  color: #b4b6b8;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Information box */
+.part {
+  display: flex;
+  flex-direction: row;
+}
+.part div {
+  padding: 2px 5px 2px 5px;
+}
+
+div .title {
+  width: 100px;
+}
+div .description {
+  font-style: italic;
+}
+div {
+  height:auto;
+}
+
+/* Highlighting */
+
