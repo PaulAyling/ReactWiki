@@ -1,16 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
-
-const Navbar = () => {
-  return (
-    <div className='navbar'>
-      <h1>Pauls Navbar</h1>
+const Navbar =({ title}) => {
+  return ( <nav className = "navbar bg-primary">
+    <h1> {title}</h1>
 <ul>
-
+<li>
+    
+      </li>
 </ul>
-    </div>
-  );
-};
+
+
+    </nav>
+  )
+}
+Navbar.defaultProps = {
+  title: ' React Wiki'
+}
 
 export default Navbar;
