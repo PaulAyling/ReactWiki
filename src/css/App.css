@@ -1,21 +1,21 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 /* Schemes */
 /* Materialize */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-
-
-
-
-                  /* Custom CSS */
+/* Custom CSS */
 /*BASIC ELEMENTS                  */
+p {
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
 h1 {
   font-size: medium;
   font-weight: 800;
   text-align: left;
+  margin-bottom: 4px;
 }
 h2 {
   font-size: medium;
@@ -23,104 +23,135 @@ h2 {
   text-align: left;
   color: #313639;
 }
-p {
-  font-weight: 300;
-  color: #b4b6b8;
-  vertical-align:center;
+h3 {
+  font-weight: 800;
+  font-size: small;
+  color: #313639;
+  margin: 0px;
 }
 ul {
-  text-decoration: none
+  text-decoration: none;
 }
-li{
+li {
   margin: 0px 0 1px 0;
 }
-nav{
-  height:30px;
+nav {
+  height: 80px;
 }
-span {
-  display: inline-block;
-  vertical-align: middle;
+nav > span {
+  height: 40px;
 }
+
+nav > span:nth-child(1) {
+  float: left;
+}
+nav > span:nth-child(2) {
+  float: right;
+}
+
+ul li
+
+/* .navbar{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+} */
 /* UTILITY STYLES*/
 .container-slim {
-  padding:3px
+  padding: 3px;
 }
 .container-page {
   box-shadow: 5px 10px #888888;
-  border:1px solid gray;
-  padding:0 30px 5px 30px;
+  border: 1px solid gray;
+  padding: 0 30px 5px 30px;
 }
 
-.infobox-parent{
-  display:flex;
-  flex-direction:row;
-  width:100%;
-
+.infobox-parent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.infobox-parent> div:first-child{
-width:200px;
-
+.infobox-parent > div:first-child {
+  width: 200px;
 }
-.material-icons{
-  color:lightgray;
-  padding:5px 2px 0 0;
+.material-icons {
+  color: lightgray;
+  padding: 5px 2px 0 0;
 }
 
-.infobox-parent>div:nth-child(2){
-font-weight: 100;
-font-size: 0.8em;
-font-style:italic; 
-padding: 1px 5px 1px 2px;
+.infobox-parent > div:nth-child(2) {
+  font-weight: 100;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 1px 5px 1px 2px;
 }
 
 /* FUCTIONAL AREAS */
 .navbar {
-  padding:1px 0 1px 5px;
+  padding: 1px 0 1px 5px;
   text-transform: uppercase;
-} 
-.navbar h1{
-  margin:0;
-  padding:3px;
+}
+.navbar h1 {
+  margin: 0;
+  padding: 3px;
 }
 
 /* ReactFolderStructure component*/
 /* type */
-.file{
+.file {
   font-weight: 200px;
 }
-.folder{
+.folder {
   font-weight: 800px;
 }
-.folder-border{
-  border-top:solid light 1px;
-
+.folder-border {
+  border-top: solid light 1px;
 }
-.lvl-1{
-  padding:0 0 0 0;
+.lvl-1 {
+  padding: 0 0 0 0;
 }
-.lvl-2{
-  padding:0 0 0 10px;
+.lvl-2 {
+  padding: 0 0 0 10px;
 }
-.lvl-3{
-  padding:0 0 0 20px;
+.lvl-3 {
+  padding: 0 0 0 20px;
 }
-
 
 .root {
-  border:0px;
-
+  border: 0px;
 }
 .file-l1 {
-  border:0;
+  border: 0;
 }
- .file-l2 {
-  padding-left:10px;
+.file-l2 {
+  padding-left: 10px;
 }
-.folder{
-  font-weight:800;
+.folder {
+  font-weight: 800;
 }
 
-.not-in-create-react-app{
-  color:lightgray;
-  
+.not-in-create-react-app {
+  color: lightgray;
+}
+
+/* // MATERIALIZE OVERIDES */
+.badge {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.card {
+  padding: 0 10px 5px 2px;
+  margin: 0px;
+}
+.row {
+  grid-auto-rows: 1fr;
+}
+.col {
+  padding: 30px;
+  grid-auto-rows: 1fr;
+}
+
+.nav-wrapper {
+  padding-left: 30px;
 }

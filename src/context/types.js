@@ -1,0 +1,1 @@
+export const PRINT_CONSOLE = 'PRINT_CONSOLE';
