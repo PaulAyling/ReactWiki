@@ -66,24 +66,10 @@ ul li
   padding: 0 30px 5px 30px;
 }
 
-.infobox-parent {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.infobox-parent > div:first-child {
-  width: 200px;
-}
+
 .material-icons {
   color: lightgray;
   padding: 5px 2px 0 0;
-}
-
-.infobox-parent > div:nth-child(2) {
-  font-weight: 100;
-  font-size: 0.8em;
-  font-style: italic;
-  padding: 1px 5px 1px 2px;
 }
 
 /* FUCTIONAL AREAS */
@@ -107,24 +93,24 @@ ul li
 .folder-border {
   border-top: solid light 1px;
 }
-.lvl-1 {
+li .row .lvl-1 {
   padding: 0 0 0 0;
 }
-.lvl-2 {
-  padding: 0 0 0 10px;
+li .row .lvl-2  { 
+  padding: 0 0 0 1rem;
 }
-.lvl-3 {
-  padding: 0 0 0 20px;
+li .row .lvl-3 {
+  padding: 0 0 0 2rem;
 }
 
 .root {
   border: 0px;
 }
-.file-l1 {
+ .file-l1 {
   border: 0;
 }
 .file-l2 {
-  padding-left: 10px;
+  padding-left: 100px;
 }
 .folder {
   font-weight: 800;
@@ -146,6 +132,8 @@ ul li
 }
 .row {
   grid-auto-rows: 1fr;
+  margin:0;
+  padding:0;
 }
 .col {
   padding: 30px;

@@ -69,6 +69,14 @@ class ReactFolderStructure extends React.Component {
           level: "lvl-2"
         },
         {
+          element: "serviceWorker.js",
+          description:
+            "A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction. Today, they already include features like push notifications and background sync and have ability to intercept and handle network requests, including programmatically managing a cache of responses.",
+          inCreateApp: "",
+          type: "file",
+          level: "lvl-2"
+        },
+        {
           element: "src",
           description: "Application files",
           inCreateApp: "",
@@ -163,7 +171,7 @@ class ReactFolderStructure extends React.Component {
         },
         {
           element: "build",
-          description: "files required for production",
+          description: "created by npm-react-build. These are the files that the web browser see when the app is deployed to a server",
           inCreateApp: "not-in-create-react-app",
           type: "folder",
           level: "lvl-2"
@@ -183,9 +191,11 @@ class ReactFolderStructure extends React.Component {
 
       return (
         <li key={elements.index}>
-          <div className={"infobox-parent" + folderBorder}>
+  
+          <div className="row">
             <div
               className={
+                "col s4  " +
                 elements.type +
                 " " +
                 elements.level +
@@ -196,7 +206,7 @@ class ReactFolderStructure extends React.Component {
               <span>{elements.type === "folder" ? icon : ""}</span>
               <span>{elements.element}</span>
             </div>
-            <div className={elements.type}>{elements.description}</div>
+            <div className="col s8  ">{elements.description}</div>
           </div>
         </li>
       );
@@ -205,6 +215,9 @@ class ReactFolderStructure extends React.Component {
       <div id="COMPONENT-ReactFolderStructure" className="container-page">
         <h1>REACT Folder Structure</h1>
         <ul>{elementsRender}</ul>
+        <div>
+          <p><em>Items in black are included when create-react-app is run. Items in gray are they files & folders I normally use</em></p>
+        </div>
       </div>
     );
   }
