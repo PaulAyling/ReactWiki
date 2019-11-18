@@ -143,3 +143,9 @@ li .row .lvl-3 {
 .nav-wrapper {
   padding-left: 30px;
 }
+
+/* Padding */
+
+p-sml{ padding:3px}
+p-med{ padding:1rem}
+p-large{ padding:2rem}

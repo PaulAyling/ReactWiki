@@ -18,7 +18,18 @@ class Home extends React.Component {
   render() {
     return (
       <div id="COMPONENT-ReactFolderStructure" className="container-page">
-        <h1>Pauls Amazing Wiki</h1>
+        <h1>Contenst</h1>
+      <div className="row ">
+        <div className="col l4 m12 white-text blue p-sml">
+          <div className="row collection with-header p-sml">create-react-app</div>
+          <div className="row collection collection-item grey-text  blue lighten-4">Build</div>
+        </div>
+        <div className="col l4 m12 green card-panel hoverable">
+        <div className="row collection with-header">create-react-app</div>
+
+        </div>
+        <div className="col l4 m12 red card-panel hoverable"></div>
+      </div>
       </div>
     );
   }
