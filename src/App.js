@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./css/App.css";
+// import all css files cannot put imports into App.css as doesnt work
+import "./css/App.css";
 
 import Navbar from "./components/layouts/Navbar";
 
@@ -12,14 +14,9 @@ import Questions from "./components/pages/questions";
 import ReactFolderStructure from "./components/pages/ReactFolderStructure";
 import ReactContext from "./components/pages/Context";
 import Syntax from "./components/pages/syntax";
+
 import ReactBurgersBoring from "./components/pages/reactBurgersBoring"
 import ReactBurgers from './components/pages/reactBurgers'
-// import FunctionalContext from "./context/functional/functionalContext"
-// import { FolderContextProvider } from './context/FoldersContext';
-// import Foldersv2 from './components/Foldersv2';
-
-//STATES
-// import FunctionalState from "./context/functional/FunctionalState";
 
 function App() {
   return (

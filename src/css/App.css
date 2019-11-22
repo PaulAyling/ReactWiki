@@ -9,7 +9,9 @@
 @import './materializeOverides.css';
 
 /* PAGES */
-@import './components/reactBurgers.css';
+@import './components/reactBurgers2.css';
+@import './components/reactBurgersBoring.css';
+
 @import './components/reactFolderStructure.css';
 
 
@@ -38,70 +40,3 @@ pre {
   padding: 0;
 }
 
-
-
-/* GRID TO CREATE ASIDES */
-aside {
-  display: block;
-  position: relative;
-  margin: 0.7rem 0;
-  min-height: 100px;
-}
-
-aside h3 {
-  font: bold 10px Sans-Serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: #e8eaf6;
-  color: #263238;
-  padding: 5px 10px;
-  margin: 0 0 10px 0;
-  line-height: 24px;
-  min-height: 100px;
-}
-
-/* Class name via Modernizr */
-.csstransforms aside {
-  border-left: 34px solid #e8eaf6;
-  padding-left: 10px;
-}
-.csstransforms aside h3 {
-  /* Abs positioning makes it not take up vert space */
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-wrap: break-word;
-
-  /* Border is the new background */
-  background: none;
-
-  /* Rotate from top left corner (not default) */
-  transform-origin: 0 0;
-  transform: rotate(90deg);
-}
-
-.component_grid {
-  display: flex;
-  flex-direction: row;
-}
-.container_component_block {
-  margin: 4px;
-  padding: 0;
-  width: 350px;
-  border: 2px solid #263238;
-  border-radius: 10px 10px 10px 10px;
-
-}
-.container_component_header {
-  background: #2196f3;
-  padding: 0.4rem;
-  border-radius: 5px 5px 0px 0px;
-}
-.container_component_header h2 {
-  text-align: center;
-  color: white;
-}
-
-.container_component_text {
-  font-size: 0.8rem;
-}

@@ -1,4 +1,5 @@
 import React from "react";
+import '../../css/components/reactFolderStructure.css';
 
 class ReactFolderStructure extends React.Component {
   constructor(props) {

@@ -1,3 +1,4 @@
+
 /* GRID TO CREATE ASIDES */
 aside {
   display: block;
@@ -62,19 +63,4 @@ aside h3 {
 
 .container_component_text {
   font-size: 0.8rem;
-}
-
-
-.burger{
-  margin: 4px;
-  padding: 0;
-  width: 350px;
-  border: 2px solid #263238;
-  border-radius: 10px 10px 10px 10px;
-}
-.burger_bun {
-  background: green;
-  padding: 0.4rem;
-  border-radius: 5px 5px 0px 0px;
-
 }

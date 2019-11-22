@@ -1,0 +1,37 @@
+/* ReactFolderStructure component*/
+/* type */
+.file {
+  font-weight: 200px;
+}
+.folder {
+  font-weight: 800px;
+}
+.folder-border {
+  border-top: solid light 1px;
+}
+li .row .lvl-1 {
+  padding: 0 0 0 0;
+}
+li .row .lvl-2  { 
+  padding: 0 0 0 1rem;
+}
+li .row .lvl-3 {
+  padding: 0 0 0 2rem;
+}
+
+.root {
+  border: 0px;
+}
+ .file-l1 {
+  border: 0;
+}
+.file-l2 {
+  padding-left: 100px;
+}
+.folder {
+  font-weight: 800;
+}
+
+.not-in-create-react-app {
+  color: lightgray;
+}

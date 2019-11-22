@@ -86,7 +86,7 @@ import { ThemeContext } from '../contexts/ThemeContext';`,
 return (
 <ThemeContext.Provider value={{...this.state}}>
 {this.props.children}
-</ThemeContext.Provider>);}}``,
+</ThemeContext.Provider>);}}`,
       definePrototypes:"",
       exportComponent:"export default ThemeContextProvider;"
     },

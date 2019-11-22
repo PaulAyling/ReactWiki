@@ -1,5 +1,6 @@
 import React , { Fragment } from "react";
 import NinjaData from "../data/ninjaData";
+import '../../css/components/reactBurgers.css';
 
 class ReactBurgers extends React.Component {
   constructor(props) {
@@ -9,8 +10,8 @@ class ReactBurgers extends React.Component {
   render() {
     const elementsRender = this.state.componentCard.map(componentCard => {
       return (
-          <div id="card" className="burger">
-            <div className="burger_bun indigo darken-3">
+          <div id="card" className="reactBurger">
+            <div className="reactBurger_bun ">
               <h2>{componentCard.filename}</h2>
             </div>
             <section class="card-vertical-header">
@@ -49,6 +50,8 @@ class ReactBurgers extends React.Component {
                 </p>
               </aside>
             </section>
+
+            <div className="test">some text</div>
           </div>
       );
     });
