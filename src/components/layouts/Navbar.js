@@ -14,8 +14,9 @@ const Navbar = ({ title }) => {
   return (
     <div>
       <nav className="nav-wrapper indigo">
-        <div>
+        <div> 
           <a href="#" className="brand-logo">
+            
             React Wiki
           </a>
           <a href="#" className="sidenav-trigger" data-target="mobile-links">
@@ -42,10 +43,16 @@ const Navbar = ({ title }) => {
               <Link to="/questions">Questions</Link>
             </li>
             <li>
-              <Link to="/functional">FunctionalComponents</Link>
+              <Link to="/syntax">Syntax</Link>
             </li>
             <li>
-              <Link to="/syntax">Syntax</Link>
+              <Link to="/netninja">NetNinja</Link>
+            </li>
+            <li>
+              <Link to="/reactBurgers">Burgers</Link>
+            </li>
+            <li>
+              <Link to="/reactBurgersboring">Boring Burgers</Link>
             </li>
           </ul>
         </div>

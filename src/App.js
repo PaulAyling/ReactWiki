@@ -8,11 +8,12 @@ import Navbar from "./components/layouts/Navbar";
 // content
 import Home from "./components/pages/home";
 import Questions from "./components/pages/questions";
-
+//Pages
 import ReactFolderStructure from "./components/pages/ReactFolderStructure";
 import ReactContext from "./components/pages/Context";
-import functionalComponent from "./components/pages/fuctionalComponents";
 import Syntax from "./components/pages/syntax";
+import ReactBurgersBoring from "./components/pages/reactBurgersBoring"
+import ReactBurgers from './components/pages/reactBurgers'
 // import FunctionalContext from "./context/functional/functionalContext"
 // import { FolderContextProvider } from './context/FoldersContext';
 // import Foldersv2 from './components/Foldersv2';
@@ -22,7 +23,7 @@ import Syntax from "./components/pages/syntax";
 
 function App() {
   return (
-    <div className="container">
+    <div >
       {/* <FunctionalContext> */}
       <Router>
         {/* <FunctionalState> */}
@@ -32,8 +33,10 @@ function App() {
             <Route exact path="/files" component={ReactFolderStructure} />
             <Route exact path="/context" component={ReactContext} />
             <Route exact path="/questions" component={Questions} />
-            <Route exact path="/functional" component={functionalComponent} />
+
             <Route exact path="/syntax" component={Syntax} />
+            <Route exact path="/reactburgersboring" component={ReactBurgersBoring} />
+            <Route exact path="/reactburgers" component={ReactBurgers} />
           </Switch>
         {/* </FunctionalState> */}
       </Router>
