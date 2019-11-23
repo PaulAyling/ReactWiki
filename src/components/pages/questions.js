@@ -67,6 +67,15 @@ class Questions extends React.Component {
           answer: "none yet",
           category: "react",
           tag: ["react", "javascript"]
+        },
+        {
+          id: 6,
+          title:
+            "bset way to use CSS in react? cannot import modules from app.css",
+          description: "text",
+          answer: "none yet",
+          category: "react",
+          tag: ["react", "javascript"]
         }
       ]
     };

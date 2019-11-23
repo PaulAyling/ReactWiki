@@ -49,10 +49,13 @@ const Navbar = ({ title }) => {
               <Link to="/netninja">NetNinja</Link>
             </li>
             <li>
-              <Link to="/reactBurgers">Burgers</Link>
+              <Link to="/reactburgershop">Burger Shop</Link>
             </li>
             <li>
-              <Link to="/reactBurgersboring">Boring Burgers</Link>
+              <Link to="/reactburgers">Burgers</Link>
+            </li>
+            <li>
+              <Link to="/reactburgersboring">Boring Burgers</Link>
             </li>
           </ul>
         </div>

@@ -1,12 +1,28 @@
+.component_grid {
+  display: flex;
+  flex-direction: row;
+}
 .reactBurger{
-border:2px solid #263238 ;
-margin:3px;
-border-radius
-
+margin:0 3px 0 3px;
+width:350px;
+}
+.reactBurger_name{
+text-align:center;
 }
 .reactBurger_bun {
-  background: #2196f3;
+  border-radius:3rem 3rem  1rem 1rem ;
+  padding:2rem;
+  text-align:center;
 }
-.test{
-  background:green;
+.reactBurger_bun_bottom {
+  border-radius:1rem 1rem  1rem 1rem ;
+  padding:1rem;
+  text-align:center;
+}
+.ingredient{
+  padding:10px;
+  border-radius:0.3rem 0.3rem 0.3rem 0.5rem ;
+}
+.reactBurger_ketchup{
+  
 }

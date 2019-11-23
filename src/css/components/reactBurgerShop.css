@@ -1,0 +1,33 @@
+
+
+
+
+.react-burger{
+  
+}
+.react-burger_assets{
+    display:flex;
+    flex-direction: row ;
+}
+.react-burger_paint{
+  width:300px
+}
+.react-burger_paint_bucket{
+  padding:10px;
+}
+img {
+  display: block;
+  max-width:100px;
+  max-height:100px;
+  width: auto;
+  height: auto;
+  display:block;
+  margin:auto;
+}
+
+.react-burger_menu{
+  width:300px;
+}
+.react-burger_shop-window{
+  
+}
