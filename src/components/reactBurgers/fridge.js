@@ -9,61 +9,86 @@ class ReactBurgers extends React.Component {
     this.state = NinjaData.componentCard.filter(function(getFile){
       return getFile.filename == "App.js"
     });
-    // Define styling
-    //Global
-    const reactBurger_ingredient = "fdsa";
-    const reactBurger_code = "fdsa";
-    // Section based
-    const reactBurger_bun = "fdsa";
-      const reactBurger_bun_color = "fdsa";
-      const reactBurger_name = "fdsa";
-    const reactBurger_ketchup = "fdsa";
-      const reactBurger_ketchup_color = "fd";
-    const reactBurger_salad = "fdsa";
-      const reactBurger_salad_color = "fdsa";
-    const reactBurger_pattie = "fdsa";
-      const reactBurger_pattie_color = "fdsa";
-    const reactBurger_bun_bottom = "fdsa";
-    const reactBurger_bun_bottom_color = "fdsa";
+
+;
 
 
 
 
   }
   render() {
+  // Formating  
+    //Global
+    const reactBurger_ingredient = {
+      padding:"10px",
+      borderRadius:"0.3rem 0.3rem 0.3rem 0.5rem"
+    }
+  
+    const reactBurger_code = {
+      fontSize: "0.8rem"
+    };
+
+  //top to bottom
+    const reactBurger_bun =  {
+      borderRadius:"3rem 3rem  1rem 1rem",
+      padding:"2rem",
+      textAlign:"center",
+      background:"yellow"
+    };
+        // Define styling
+
+    // Section based
+
+      const reactBurger_bun_color = "yellow darken-2";
+      const reactBurger_name = {
+        textAlign:"center"
+      };
+    const reactBurger_ketchup = {
+
+    };
+      const reactBurger_ketchup_color = "red darken-2";
+    const reactBurger_salad = {
+
+    };
+      const reactBurger_salad_color = "green";
+    const reactBurger_pattie = {};
+      const reactBurger_pattie_color = "brown";
+    const reactBurger_bun_bottom = {};
+
+
     const elementsRender = this.state.map(componentCard => {
       return (
         <div id="card" className="reactBurger ">
-          <div className="reactBurger_bun">
-            <h2 className="reactBurger_name">{componentCard.filename}</h2>
+          <div id="header" style={reactBurger_bun} className={reactBurger_bun_color }>
+            <h2 style={reactBurger_name}>{componentCard.filename}</h2>
           </div>
 
-          <section class="ingredient green darken-1">
+          <section id="salad" className={reactBurger_salad_color} style={reactBurger_ingredient}>
             <pre>
-              <p className="container_component_text">
+              <p className={reactBurger_code}>
                 {componentCard.importPaths}
               </p>
             </pre>
           </section>
 
-          <section class="ingredient  red darken-4">
+          <section id="ketchup" className={reactBurger_ketchup_color} style={reactBurger_ingredient}>
             <pre>
-              <p className="container_component_text">
+              <p className={reactBurger_code}>
                 {componentCard.defineComponent}{" "}
               </p>
             </pre>
           </section>
 
-          <section class="ingredient grey-text lighten-5 brown darken-4">
+          <section id="pattie" className={reactBurger_pattie_color} style={reactBurger_ingredient}>
             <pre>
-              <p className="container_component_text">
+              <p className={reactBurger_code}>
                 {componentCard.returnJsx}
               </p>
             </pre>
           </section>
-          <section class="reactBurger_bun_bottom yellow darken-2">
+          <section id="pattie" className={reactBurger_bun_color } style={reactBurger_ingredient}>
             <pre>
-              <p className="container_component_text">
+              <p style={reactBurger_name}>
                 {componentCard.exportComponent}
               </p>
             </pre>
