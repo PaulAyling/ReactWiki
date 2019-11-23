@@ -1,33 +1,37 @@
-
-
-
-
-.react-burger{
-  
+.react-burger {
 }
-.react-burger_assets{
-    display:flex;
-    flex-direction: row ;
+.react-burger_assets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
-.react-burger_paint{
-  width:300px
+.react-burger_paint {
+  width: 300px;
 }
-.react-burger_paint_bucket{
-  padding:10px;
+.react-burger_paint_bucket {
+  padding: 10px;
 }
 img {
   display: block;
-  max-width:100px;
-  max-height:100px;
+  max-width: 100px;
+  max-height: 100px;
   width: auto;
   height: auto;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
-.react-burger_menu{
-  width:300px;
+.react-burger_menu {
+  width: 300px;
+  padding: 20px;
+  border-radius: 3px;
+  width: 300px;
 }
-.react-burger_shop-window{
-  
+.react-burger_menu_header {
+  font-style: italic;
+  text-align: center;
+}
+.react-burger_shop-window {
+  width: 300px;
 }

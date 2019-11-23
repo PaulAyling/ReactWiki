@@ -26,12 +26,41 @@ class ReactBurgerShop extends React.Component {
             </div>
           </div>
 
-          <div class="react-burger_menu">
-            <div class="red">
-              <h2>Menu</h2>
+          <div class="react-burger_menu yellow darken-3">
+            <h1 className="center-text">App.js</h1>
+            <div class="yellow">
+              <h2 className="react-burger_menu_header">Menu</h2>
+
+              <section class="ingredient green darken-1">
+                <pre>
+                  <p className="container_component_text">
+                    import React from 'react'; import BookList from
+                    './components/BookList'; import Navbar from
+                    './components/Navbar'; import ThemeContextProvider from
+                    './contexts/ThemeContext';`
+                  </p>
+                </pre>
+              </section>
+
+              <section class="ingredient  red darken-4">
+                <pre>
+                  <p className="container_component_text" />
+                </pre>
+              </section>
+
+              <section class="ingredient grey-text lighten-5 brown darken-4">
+                <pre>
+                  <p className="container_component_text" />
+                </pre>
+              </section>
+              <section class="reactBurger_bun_bottom yellow darken-2">
+                <pre>
+                  <p className="container_component_text" />
+                </pre>
+              </section>
             </div>
           </div>
-          <div class="react-burger_shop-window">
+          <div class="react-burger_shop-window blue lighten-2">
             <h2>Shop Window</h2>
           </div>
         </div>

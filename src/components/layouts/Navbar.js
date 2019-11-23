@@ -14,9 +14,8 @@ const Navbar = ({ title }) => {
   return (
     <div>
       <nav className="nav-wrapper indigo">
-        <div> 
+        <div>
           <a href="#" className="brand-logo">
-            
             React Wiki
           </a>
           <a href="#" className="sidenav-trigger" data-target="mobile-links">
@@ -57,6 +56,9 @@ const Navbar = ({ title }) => {
             <li>
               <Link to="/reactburgersboring">Boring Burgers</Link>
             </li>
+            <li>
+              <Link to="/reactburgerrestaurant">New Resteraunt in town</Link>
+            </li>{" "}
           </ul>
         </div>
       </nav>

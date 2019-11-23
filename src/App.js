@@ -15,28 +15,39 @@ import ReactFolderStructure from "./components/pages/ReactFolderStructure";
 import ReactContext from "./components/pages/Context";
 import Syntax from "./components/pages/syntax";
 
-import ReactBurgersBoring from "./components/pages/reactBurgersBoring"
-import ReactBurgers from './components/pages/reactBurgers'
-import ReactBurgerShop from './components/pages/reactBurgerShop'
+import ReactBurgersBoring from "./components/pages/reactBurgersBoring";
+import ReactBurgers from "./components/pages/reactBurgers";
+import ReactBurgerShop from "./components/pages/reactBurgerShop";
+
+import ReactBurgerRestaurant from "./components/pages/reactBurgerRestaurant";
 
 function App() {
   return (
-    <div >
+    <div>
       {/* <FunctionalContext> */}
       <Router>
         {/* <FunctionalState> */}
-          <Navbar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/files" component={ReactFolderStructure} />
-            <Route exact path="/context" component={ReactContext} />
-            <Route exact path="/questions" component={Questions} />
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/files" component={ReactFolderStructure} />
+          <Route exact path="/context" component={ReactContext} />
+          <Route exact path="/questions" component={Questions} />
 
-            <Route exact path="/syntax" component={Syntax} />
-            <Route exact path="/reactburgersboring" component={ReactBurgersBoring} />
-            <Route exact path="/reactburgers" component={ReactBurgers} />
-            <Route exact path="/reactburgershop" component={ReactBurgerShop} />
-          </Switch>
+          <Route exact path="/syntax" component={Syntax} />
+          <Route
+            exact
+            path="/reactburgersboring"
+            component={ReactBurgersBoring}
+          />
+          <Route exact path="/reactburgers" component={ReactBurgers} />
+          <Route exact path="/reactburgershop" component={ReactBurgerShop} />
+          <Route
+            exact
+            path="/reactburgerrestaurant"
+            component={ReactBurgerRestaurant}
+          />
+        </Switch>
         {/* </FunctionalState> */}
       </Router>
       {/* </FunctionalContext> */}

@@ -1,0 +1,44 @@
+.yin-yang {
+  width: 192px;
+  box-sizing: content-box;
+  height: 96px;
+  background: #eee;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px 4px 100px 4px;
+  border-radius: 100%;
+  position: relative;
+}
+.yin-yang:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: black;
+  border: 36px solid black;
+  border-radius: 100%;
+  width: 23px;
+  height: 22px;
+  box-sizing: content-box;
+}
+.yin-yang:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #eee;
+  border: 36px solid #eee;
+  border-radius: 100%;
+  width: 23px;
+  height: 22px;
+  box-sizing: content-box;
+}
+.yin-yang_text {
+  position: relative; // We are now ready to move the element
+
+  width: 200px;
+  height: 200px;
+  top: 70px;
+  left: 100px;
+  z-index: 2;
+}
