@@ -1,5 +1,5 @@
 const reactBurgerData = {
-  componentCard: [
+  data: [
     {
       filename:"App.js",
       importPaths:`import React from 'react';
@@ -92,13 +92,16 @@ return (
     },
 
   ],
-  componentTypes:[
+  styles:[
     {
       componentName:"burger",
-      componentStructure: {
-        padding:"10px",
-        borderRadius:"0.3rem 0.3rem 0.3rem 0.5rem"
-      },
+      filenameSection:"reactBurger_bun",
+      filename:"reactBurger_name",
+      importsSection:"reactBurger_salad",
+      definitionSection:"reactBurger_ketchup",
+      returnSection:"reactBurger_pattie",
+      exportsSection:"reactBurger_bunBottom"
+
     },
   ]
 

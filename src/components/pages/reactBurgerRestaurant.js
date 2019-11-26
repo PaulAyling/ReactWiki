@@ -7,10 +7,10 @@ import FengShui from '../reactBurgers/fengShui'
 
 // CREATE PROPS FOR CODECONTAINERS
 //Burger
-const burgerCode = ReactBurgerData.componentCard.filter(function(getFile){
+const Data = ReactBurgerData.data.filter(function(getFile){
   return getFile.filename == "App.js"
 });
-const burgerStyle = ReactBurgerData.componentTypes.filter(function(getFile){
+const Styles = ReactBurgerData.styles.filter(function(getFile){
   return getFile.componentName == "burger"
 });
 
@@ -26,7 +26,7 @@ const ReactBurgerRestaurant = () => {
     <div>
       <h1>Test Burger Resteraunt Page</h1>
       <FengShui/>
-      <CodeContainer code={burgerCode} styler={burgerStyle}/>
+      <CodeContainer Data={Data} Styles={Styles}/>
     </div>
   );
 };

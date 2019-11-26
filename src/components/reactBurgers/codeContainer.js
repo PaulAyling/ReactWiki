@@ -4,62 +4,59 @@
 // 4. output online
 
 import React, { Fragment } from "react";
+import "../../css/components/codeContainer";
 import "../../css/components/reactBurgers.css";
 
 const codeContainer = (props) => {
 
-// Restructuring styler
-// const { componentName } = props.styler.componentTypes
-
-    const codeRender = props.code.map(code => {
+// Restructuring styler - Doesn't work
+// const { filenameSection } = props.Styles[0].filenameSection
+    const codeRender = props.Data.map(Data => {
+      // THis doesn't work either
+      // const { filenameSection } = props.Styles[0].filenameSection
       return (
-        <div id="card" className="reactBurger ">
-          
-        <section id="Filename" className="reactBurger_bun">
-          <h2 className="reactBurger_name">{code.filename}</h2>
-        </section>
+        <Fragment id="codeContainer" className="codeContainer ">
+          <section id="Filename" className={props.Styles[0].filenameSection}>
+            <h2 className={props.Styles[0].filename}>{Data.filename}</h2>
+          </section>
 
-        <section id="Imports" class="ingredient green darken-1">
-          <pre>
-            <p className="container_component_text">
-              {code.importPaths}
-            </p>
-          </pre>
-        </section>
+          <section id="Imports" className={props.Styles[0].importsSection}>
+            <pre>
+              <p className="container_component_text">
+                {Data.importPaths}
+              </p>
+            </pre>
+          </section>
 
-        <section id="Definition" class="ingredient  red darken-4">
-          <pre>
-            <p className="container_component_text">
-              {code.defineComponent}{" "}
-            </p>
-          </pre>
-        </section>
+          <section id="Definition" className={props.Styles[0].definitionSection}>
+            <pre>
+              <p className="container_component_text">
+                {Data.defineComponent}{" "}
+              </p>
+            </pre>
+          </section>
 
-        <section id="Return" class="ingredient grey-text lighten-5 brown darken-4">
-          <pre>
-            <p className="container_component_text">
-              {code.returnJsx}
-            </p>
-          </pre>
-        </section>
-        <section id="Exports" class="reactBurger_bun_bottom yellow darken-2">
-          <pre>
-            <p className="container_component_text">
-              {code.exportComponent}
-            </p>
-          </pre>
-        </section>
-        <div className="blue">  HELLO:  {props.styler[0].componentName}</div>
-      </div>
+          <section id="Return" className={props.Styles[0].returnSection}>
+            <pre>
+              <p className="container_component_text">
+                {Data.returnJsx}
+              </p>
+            </pre>
+          </section>
+          <section id="Exports" className={props.Styles[0].exportsSection}>
+          <h2 className={props.Styles[0].filename}>{Data.exportComponent}</h2>
+          </section>
+      </Fragment>
       );
     });
     
     return (
       <div id="Card Page" className="container">
-        {props.styler.componentName}
+        {/* {props.Styles.componentName} */}
         <Fragment>{codeRender}</Fragment>
-        <div className="blue">  HELLO:  {props.styler[0].componentName}</div>
-        <div className="yellow">  DESTRUCTURED:  {props.styler[0].componentName}</div>
+        {/* {/* <div className="blue">  HELLO:  {props.styler[0].componentName}
+        </div> */}
+ 
      </div>
     );
   }

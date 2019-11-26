@@ -1,0 +1,9 @@
+/* CodeContainer Styles */
+.component_grid {
+  display: flex;
+  flex-direction: row;
+}
+.codeContainer{
+margin:0 3px 0 3px;
+width:350px;
+}

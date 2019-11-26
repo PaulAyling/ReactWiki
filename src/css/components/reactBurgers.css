@@ -1,28 +1,25 @@
-.component_grid {
-  display: flex;
-  flex-direction: row;
+.reactBurger_bun{
+  background: #fbc02d ;
+  border-radius:4rem 4rem  1rem 1rem ;
+    padding:1.5rem;
+    text-align:center;
 }
-.reactBurger{
-margin:0 3px 0 3px;
-width:350px;
+.reactBurger_bunBottom{
+  border-radius:0.3rem 0.3rem  1rem 1rem ;
+    padding:1.5rem;
+    text-align:center;
 }
-.reactBurger_name{
-text-align:center;
-}
-.reactBurger_bun {
-  border-radius:3rem 3rem  1rem 1rem ;
-  padding:2rem;
-  text-align:center;
-}
-.reactBurger_bun_bottom {
-  border-radius:1rem 1rem  1rem 1rem ;
-  padding:1rem;
-  text-align:center;
-}
-.ingredient{
-  padding:10px;
+.reactBurger_salad
+,.reactBurger_ketchup
+,.reactBurger_pattie
+  {
   border-radius:0.3rem 0.3rem 0.3rem 0.5rem ;
+  padding:0.8rem 0.8rem 0.8rem 1rem;
+  text-align:left;
+  color:	#f8f8ff;
 }
-.reactBurger_ketchup{
-  
-}
+.reactBurger_name{text-align:center;}
+.reactBurger_salad {background:green;}
+.reactBurger_ketchup{background:red;}
+.reactBurger_pattie{background:#725300;}
+.reactBurger_bunBottom{background:#fbc02d;;}
