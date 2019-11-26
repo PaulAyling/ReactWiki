@@ -1,129 +1,69 @@
-/*NEXT STEPS
-PUT THE FORMING DATA INTO THE COM{PONENT CARD}*/
+// 1. complete styleing
+// 2. setup date to work wiht props
+// 3. combine in reteraunt
+// 4. output online
+
 import React, { Fragment } from "react";
-import ReactBurgerData from '../data/reactBurgerData'
 import "../../css/components/reactBurgers.css";
 
-class CodeContainer extends React.Component {
-  constructor(props) {
-    super(props)
-    // Origoinal
-    // this.state = ReactBurgerData.componentCard.filter(function(getFile){
-    //   return getFile.filename == "App.js"
-    // });
-    const currentCode =[
-      {code1:"blah"}
-    ]
-    const currentStyle =[
-      {style1:"blah"}
-    ]
-    this.state ={
-      componentCard: ReactBurgerData.componentCard.filter(function(getFile){
-        return getFile.filename == "App.js"
-      }),
-      currentStyle
-    }
+const codeContainer = (props) => {
 
-  
-// Lightwieght Render
-render(
-  <div>
-  Just a test
-  </div>
-)
-}
+// Restructuring styler
+// const { componentName } = props.styler.componentTypes
 
-  // render() {
-  // // Formating  
-  //   //Global
-  //   const reactBurger_ingredient = {
-  //     padding:"10px",
-  //     borderRadius:"0.3rem 0.3rem 0.3rem 0.5rem"
-  //   }
-  
-  //   const reactBurger_code = {
-  //     fontSize: "0.8rem"
-  //   };
+    const codeRender = props.code.map(code => {
+      return (
+        <div id="card" className="reactBurger ">
+          
+        <section id="Filename" className="reactBurger_bun">
+          <h2 className="reactBurger_name">{code.filename}</h2>
+        </section>
 
-  // //top to bottom
-  //   const reactBurger_bun =  {
-  //     borderRadius:"3rem 3rem  1rem 1rem",
-  //     padding:"2rem",
-  //     textAlign:"center",
-  //     background:"yellow"
-  //   };
-  //       // Define styling
+        <section id="Imports" class="ingredient green darken-1">
+          <pre>
+            <p className="container_component_text">
+              {code.importPaths}
+            </p>
+          </pre>
+        </section>
 
-  //   // Section based
+        <section id="Definition" class="ingredient  red darken-4">
+          <pre>
+            <p className="container_component_text">
+              {code.defineComponent}{" "}
+            </p>
+          </pre>
+        </section>
 
-  //     const reactBurger_bun_color = "yellow darken-2";
-  //     const reactBurger_name = {
-  //       textAlign:"center"
-  //     };
-  //   const reactBurger_ketchup = {
-
-  //   };
-  //     const reactBurger_ketchup_color = "red darken-2";
-  //   const reactBurger_salad = {
-
-  //   };
-  //     const reactBurger_salad_color = "green";
-  //   const reactBurger_pattie = {};
-  //     const reactBurger_pattie_color = "brown";
-  //   const reactBurger_bun_bottom = {};
+        <section id="Return" class="ingredient grey-text lighten-5 brown darken-4">
+          <pre>
+            <p className="container_component_text">
+              {code.returnJsx}
+            </p>
+          </pre>
+        </section>
+        <section id="Exports" class="reactBurger_bun_bottom yellow darken-2">
+          <pre>
+            <p className="container_component_text">
+              {code.exportComponent}
+            </p>
+          </pre>
+        </section>
+        <div className="blue">  HELLO:  {props.styler[0].componentName}</div>
+      </div>
+      );
+    });
+    
+    return (
+      <div id="Card Page" className="container">
+        {props.styler.componentName}
+        <Fragment>{codeRender}</Fragment>
+        <div className="blue">  HELLO:  {props.styler[0].componentName}</div>
+        <div className="yellow">  DESTRUCTURED:  {props.styler[0].componentName}</div>
+     </div>
+    );
+  }
 
 
-  //   const elementsRender = this.state.map(componentCard => {
-  //     return (
-  //       <div id="card" className="reactBurger ">
-  //         <div id="header" style={reactBurger_bun} className={reactBurger_bun_color }>
-  //           <h2 style={reactBurger_name}>{componentCard.filename}</h2>
-  //         </div>
 
-  //         <section id="salad" className={reactBurger_salad_color} style={reactBurger_ingredient}>
-  //           <pre>
-  //             <p className={reactBurger_code}>
-  //               {componentCard.importPaths}
-  //             </p>
-  //           </pre>
-  //         </section>
-
-  //         <section id="ketchup" className={reactBurger_ketchup_color} style={reactBurger_ingredient}>
-  //           <pre>
-  //             <p className={reactBurger_code}>
-  //               {componentCard.defineComponent}{" "}
-  //             </p>
-  //           </pre>
-  //         </section>
-
-  //         <section id="pattie" className={reactBurger_pattie_color} style={reactBurger_ingredient}>
-  //           <pre>
-  //             <p className={reactBurger_code}>
-  //               {componentCard.returnJsx}
-  //             </p>
-  //           </pre>
-  //         </section>
-  //         <section id="pattie" className={reactBurger_bun_color } style={reactBurger_ingredient}>
-  //           <pre>
-  //             <p style={reactBurger_name}>
-  //               {componentCard.exportComponent}
-  //             </p>
-  //           </pre>
-  //         </section>
-  //       </div>
-  //     );
-  //   });
-
-  //   return (
-  //     <div id="Card Page" className="container-page">
-  //       <h1 className="reactBurger_name">TAKE A LOOK IN MY FRIDGE</h1>
-
-  //       <div id="Card Grid" className="container-slim component_grid">
-  //         <Fragment>{elementsRender}</Fragment>
-  //       </div>
-  //     </div>
-  //   );
-  // } 
-  //}
-
-export default CodeContainer;
+export default codeContainer

@@ -57,7 +57,10 @@ const Navbar = ({ title }) => {
               <Link to="/reactburgersboring">Boring Burgers</Link>
             </li>
             <li>
-              <Link to="/reactburgerrestaurant">New Resteraunt in town</Link>
+              <Link to="/reactburgerrestaurant">ReactBurgerResteraunt</Link>
+            </li>{" "}
+            <li>
+              <Link to="/stateexamples">StateExamples</Link>
             </li>{" "}
           </ul>
         </div>

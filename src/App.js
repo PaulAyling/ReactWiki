@@ -20,6 +20,7 @@ import ReactBurgers from "./components/pages/reactBurgers";
 import ReactBurgerShop from "./components/pages/reactBurgerShop";
 
 import ReactBurgerRestaurant from "./components/pages/reactBurgerRestaurant";
+import StateExamples from "./components/pages/stateExamples";
 
 function App() {
   return (
@@ -47,6 +48,14 @@ function App() {
             path="/reactburgerrestaurant"
             component={ReactBurgerRestaurant}
           />
+          <Route
+            exact
+            path="/stateexamples" component={StateExamples}
+          />
+          {/* <Route
+            exact
+            path="/reactErrors" component={ReactErrors}
+          /> */}
         </Switch>
         {/* </FunctionalState> */}
       </Router>

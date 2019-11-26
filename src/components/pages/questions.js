@@ -73,6 +73,15 @@ class Questions extends React.Component {
           title:
             "bset way to use CSS in react? cannot import modules from app.css",
           description: "text",
+          answer: "BEM or SASS with inline styles (forget about cascading)",
+          category: "react",
+          tag: ["react", "javascript"]
+        },
+        {
+          id: 6,
+          title:
+            "CORS ERROR",
+          description: "A cross-origin error was thrown. React doesn't have access to the actual ",
           answer: "none yet",
           category: "react",
           tag: ["react", "javascript"]
