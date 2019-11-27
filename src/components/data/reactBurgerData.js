@@ -20,6 +20,42 @@ import ThemeContextProvider from './contexts/ThemeContext';`,
       definePrototypes:"",
       exportComponent:"export default App;"
     },
+    {
+      filename:"CSS",
+      importPaths:``,
+      defineComponent:`style.cssgg`,
+      variablesAndFunctions:"",
+      returnJsx:``,
+      definePrototypes:"",
+      exportComponent:""
+    },
+    
+    {
+      filename:"myFile.json",
+      importPaths:``,
+      defineComponent:`favicon.ico
+      index.html
+      logo192.png
+      manifest.json
+      robots.txt`,
+      variablesAndFunctions:"",
+      returnJsx:``,
+      definePrototypes:"",
+      exportComponent:""
+    },
+    {
+      filename:"Public",
+      importPaths:``,
+      defineComponent:`favicon.ico
+      index.html
+      logo192.png
+      manifest.json
+      robots.txt`,
+      variablesAndFunctions:"",
+      returnJsx:``,
+      definePrototypes:"",
+      exportComponent:""
+    },
     
     {
       filename:"BookList.js",
@@ -101,6 +137,37 @@ return (
       definitionSection:"reactBurger_ketchup",
       returnSection:"reactBurger_pattie",
       exportsSection:"reactBurger_bunBottom"
+
+    },
+    {
+     componentBorder: "reactCss_border",
+      componentName:"CSS",
+      filenameSection:"reactCss_header",
+      filename:"reactCss_name",
+      importsSection:"reactCss_salad",
+      definitionSection:"reactCss_ketchup",
+      returnSection:"reactCss_pattie",
+      exportsSection:"reactCss_footer"
+
+    },
+    {
+      componentName:"Fridge",
+      filenameSection:"reactCss_header",
+      filename:"reactCss_name",
+      importsSection:"reactCss_salad",
+      definitionSection:"reactCss_ketchup",
+      returnSection:"reactCss_pattie",
+      exportsSection:"reactCss_footer"
+
+    },
+    {
+      componentName:"Public",
+      filenameSection:"reactCss_header",
+      filename:"reactCss_name",
+      importsSection:"reactCss_salad",
+      definitionSection:"reactCss_ketchup",
+      returnSection:"reactCss_pattie",
+      exportsSection:"reactCss_footer"
 
     },
   ]

@@ -1,25 +1,23 @@
-// 1. complete styleing
-// 2. setup date to work wiht props
 // 3. combine in reteraunt
 // 4. output online
 
 import React, { Fragment } from "react";
-import "../../css/components/codeContainer";
-import "../../css/components/reactBurgers.css";
+import "../../css/components/reactBurgers/codeContainer.css";
+import "../../css/components/reactBurgers/reactPaint.css";
+import "../../css/components/reactBurgers/reactFridge.css";
+import "../../css/components/reactBurgers/reactWindow.css";
+import "../../css/components/reactBurgers/reactMenu.css";
 
+
+import "../../css/components/reactBurgers/reactBurgers.css";
 const codeContainer = (props) => {
-
-// Restructuring styler - Doesn't work
-// const { filenameSection } = props.Styles[0].filenameSection
     const codeRender = props.Data.map(Data => {
-      // THis doesn't work either
-      // const { filenameSection } = props.Styles[0].filenameSection
       return (
-        <Fragment id="codeContainer" className="codeContainer ">
+        <div id="codeContainer" className={props.Styles[0].componentBorder}>
           <section id="Filename" className={props.Styles[0].filenameSection}>
             <h2 className={props.Styles[0].filename}>{Data.filename}</h2>
+            <h3>UPDATED TODAY</h3>
           </section>
-
           <section id="Imports" className={props.Styles[0].importsSection}>
             <pre>
               <p className="container_component_text">
@@ -27,7 +25,6 @@ const codeContainer = (props) => {
               </p>
             </pre>
           </section>
-
           <section id="Definition" className={props.Styles[0].definitionSection}>
             <pre>
               <p className="container_component_text">
@@ -35,7 +32,6 @@ const codeContainer = (props) => {
               </p>
             </pre>
           </section>
-
           <section id="Return" className={props.Styles[0].returnSection}>
             <pre>
               <p className="container_component_text">
@@ -46,17 +42,13 @@ const codeContainer = (props) => {
           <section id="Exports" className={props.Styles[0].exportsSection}>
           <h2 className={props.Styles[0].filename}>{Data.exportComponent}</h2>
           </section>
-      </Fragment>
+      </div>
       );
     });
     
     return (
-      <div id="Card Page" className="container">
-        {/* {props.Styles.componentName} */}
+      <div id="Card Page" className="code-container">
         <Fragment>{codeRender}</Fragment>
-        {/* {/* <div className="blue">  HELLO:  {props.styler[0].componentName}
-        </div> */}
- 
      </div>
     );
   }

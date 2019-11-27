@@ -6,14 +6,42 @@ import CodeContainer from "../reactBurgers/codeContainer";
 import FengShui from '../reactBurgers/fengShui'
 
 // CREATE PROPS FOR CODECONTAINERS
-//Burger
-const Data = ReactBurgerData.data.filter(function(getFile){
-  return getFile.filename == "App.js"
+//CSS
+const CSSData = ReactBurgerData.data.filter(function(getFile){
+  return getFile.filename == "CSS"
 });
-const Styles = ReactBurgerData.styles.filter(function(getFile){
-  return getFile.componentName == "burger"
+const CSSStyles = ReactBurgerData.styles.filter(function(getFile){
+  return getFile.componentName == "CSS"
 });
 
+//Fridge
+const fridgeData = ReactBurgerData.data.filter(function(getFile){
+  return getFile.filename == "myFile.json"
+});
+const fridgeStyles = ReactBurgerData.styles.filter(function(getFile){
+  return getFile.componentName == "burger"
+});
+//window
+const windowData = ReactBurgerData.data.filter(function(getFile){
+  return getFile.filename == "Public"
+});
+const windowStyles = ReactBurgerData.styles.filter(function(getFile){
+  return getFile.componentName == "Public"
+});
+//Menu
+const menuData = ReactBurgerData.data.filter(function(getFile){
+  return getFile.filename == "App.js"
+});
+const menuStyles = ReactBurgerData.styles.filter(function(getFile){
+  return getFile.componentName == "burger"
+});
+//Burger
+const burgerData = ReactBurgerData.data.filter(function(getFile){
+  return getFile.filename == "App.js"
+});
+const burgerStyles = ReactBurgerData.styles.filter(function(getFile){
+  return getFile.componentName == "burger"
+});
 
 
 
@@ -23,10 +51,22 @@ const Styles = ReactBurgerData.styles.filter(function(getFile){
 const ReactBurgerRestaurant = () => {
   // {console.log(json.stringify(burgerStyle))}
   return (
-    <div>
-      <h1>Test Burger Resteraunt Page</h1>
-      <FengShui/>
-      <CodeContainer Data={Data} Styles={Styles}/>
+    <div className="container">
+ 
+        <div id="row 1" className="restaurant-row">
+
+      <CodeContainer Data={CSSData} Styles={CSSStyles}/>
+      <CodeContainer Data={fridgeData} Styles={fridgeStyles}/>
+      <CodeContainer Data={windowData} Styles={windowStyles}/>
+
+
+        </div>
+        <div id ="row 2">
+        <CodeContainer Data={menuData} Styles={menuStyles}/>
+        </div>
+        <div id="row 3"></div>
+    
+ 
     </div>
   );
 };

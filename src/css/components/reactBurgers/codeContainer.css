@@ -1,9 +1,19 @@
 /* CodeContainer Styles */
+
+.restaurant-row{
+  display:flex;
+  justify-content: space-between;
+}
+
+.code-container{
+  margin:5px;
+  width:300px;
+}
 .component_grid {
   display: flex;
   flex-direction: row;
 }
 .codeContainer{
 margin:0 3px 0 3px;
-width:350px;
+
 }
