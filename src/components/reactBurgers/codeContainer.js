@@ -16,7 +16,7 @@ const codeContainer = (props) => {
         <div id="codeContainer" className={props.Styles[0].componentBorder}>
           <section id="Filename" className={props.Styles[0].filenameSection}>
             <h2 className={props.Styles[0].filename}>{Data.filename}</h2>
-            <h3>UPDATED TODAY</h3>
+         
           </section>
           <section id="Imports" className={props.Styles[0].importsSection}>
             <pre>
@@ -49,6 +49,7 @@ const codeContainer = (props) => {
     return (
       <div id="Card Page" className="code-container">
         <Fragment>{codeRender}</Fragment>
+   
      </div>
     );
   }

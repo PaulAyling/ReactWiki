@@ -19,14 +19,14 @@ const fridgeData = ReactBurgerData.data.filter(function(getFile){
   return getFile.filename == "myFile.json"
 });
 const fridgeStyles = ReactBurgerData.styles.filter(function(getFile){
-  return getFile.componentName == "burger"
+  return getFile.componentName == "Fridge"
 });
 //window
 const windowData = ReactBurgerData.data.filter(function(getFile){
-  return getFile.filename == "Public"
+  return getFile.filename == "Window"
 });
 const windowStyles = ReactBurgerData.styles.filter(function(getFile){
-  return getFile.componentName == "Public"
+  return getFile.componentName == "Window"
 });
 //Menu
 const menuData = ReactBurgerData.data.filter(function(getFile){

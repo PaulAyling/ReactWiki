@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import NinjaData from "../data/ninjaData";
-import "../../css/components/reactBurgers.css";
+import "../../css/components/reactBurgers/reactBurgers.css";
 
 class ReactBurgers extends React.Component {
   constructor(props) {

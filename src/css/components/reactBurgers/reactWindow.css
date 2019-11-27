@@ -1,25 +1,26 @@
 .codeContainer{
-  border:solid black 3px;
+  border:solid black 2px;
   }
 
-.reactCss_footer,.reactCss_header{
+.reactWindow_footer,.reactWindow_header{
     padding:1.5rem;
     text-align:center;
-    background:red;
+    background:darkblue;
+
 }
-.reactCss_footer{border-radius:0 0 0.8rem 0.8rem;}
-.reactCss_header{border-radius:0.8rem 0.8rem 0 0;}
-.reactCss_salad
-,.reactCss_ketchup
-,.reactCss_pattie
+.reactWindow_footer{border-radius:0 0 0.8rem 0.8rem;}
+.reactWindow_header{border-radius:0.8rem 0.8rem 0 0;}
+.reactWindow_salad
+,.reactWindow_ketchup
+,.reactWindow_pattie
   {
   padding:0.8rem 0.8rem 0.8rem 1rem;
   text-align:left;
   color:	#f8f8ff;
 }
-.reactCss_name{text-align:center;}
-.reactCss_salad {background:red;}
-.reactCss_ketchup{background:red;}
-.reactCss_pattie{background:red;}
-.reactCss_footer{background:red;;}
+.reactWindow_name{text-align:center;}
+.reactWindow_salad {background:red;}
+.reactWindow_ketchup{background:lightblue;}
+.reactWindow_pattie{background:lightblue;}
+.reactWindow_footer{background:lightblue;;}
 

@@ -1,7 +1,7 @@
 // EXAMPLES UPDATEING STATE
 import React, { Fragment } from "react";
 import ReactBurgerData from '../data/reactBurgerData'
-import "../../css/components/reactBurgers.css";
+import "../../css/components/reactBurgers/reactBurgers.css";
 
 class ObjectsWithObjectArray4 extends React.Component {
   constructor(props) {

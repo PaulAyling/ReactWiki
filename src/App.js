@@ -17,7 +17,6 @@ import Syntax from "./components/pages/syntax";
 
 import ReactBurgersBoring from "./components/pages/reactBurgersBoring";
 import ReactBurgers from "./components/pages/reactBurgers";
-import ReactBurgerShop from "./components/pages/reactBurgerShop";
 
 import ReactBurgerRestaurant from "./components/pages/reactBurgerRestaurant";
 import StateExamples from "./components/pages/stateExamples";
@@ -42,7 +41,6 @@ function App() {
             component={ReactBurgersBoring}
           />
           <Route exact path="/reactburgers" component={ReactBurgers} />
-          <Route exact path="/reactburgershop" component={ReactBurgerShop} />
           <Route
             exact
             path="/reactburgerrestaurant"

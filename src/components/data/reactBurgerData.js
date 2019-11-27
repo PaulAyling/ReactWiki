@@ -23,7 +23,7 @@ import ThemeContextProvider from './contexts/ThemeContext';`,
     {
       filename:"CSS",
       importPaths:``,
-      defineComponent:`style.cssgg`,
+      defineComponent:`style.css`,
       variablesAndFunctions:"",
       returnJsx:``,
       definePrototypes:"",
@@ -33,11 +33,7 @@ import ThemeContextProvider from './contexts/ThemeContext';`,
     {
       filename:"myFile.json",
       importPaths:``,
-      defineComponent:`favicon.ico
-      index.html
-      logo192.png
-      manifest.json
-      robots.txt`,
+      defineComponent:``,
       variablesAndFunctions:"",
       returnJsx:``,
       definePrototypes:"",
@@ -47,10 +43,10 @@ import ThemeContextProvider from './contexts/ThemeContext';`,
       filename:"Public",
       importPaths:``,
       defineComponent:`favicon.ico
-      index.html
-      logo192.png
-      manifest.json
-      robots.txt`,
+index.html
+logo192.png
+manifest.json
+robots.txt`,
       variablesAndFunctions:"",
       returnJsx:``,
       definePrototypes:"",
@@ -130,17 +126,7 @@ return (
   ],
   styles:[
     {
-      componentName:"burger",
-      filenameSection:"reactBurger_bun",
-      filename:"reactBurger_name",
-      importsSection:"reactBurger_salad",
-      definitionSection:"reactBurger_ketchup",
-      returnSection:"reactBurger_pattie",
-      exportsSection:"reactBurger_bunBottom"
-
-    },
-    {
-     componentBorder: "reactCss_border",
+      componentBorder: "reactCss_border",
       componentName:"CSS",
       filenameSection:"reactCss_header",
       filename:"reactCss_name",
@@ -148,28 +134,38 @@ return (
       definitionSection:"reactCss_ketchup",
       returnSection:"reactCss_pattie",
       exportsSection:"reactCss_footer"
-
+      
     },
     {
+      componentBorder: "reactFridge_border",
       componentName:"Fridge",
-      filenameSection:"reactCss_header",
-      filename:"reactCss_name",
-      importsSection:"reactCss_salad",
-      definitionSection:"reactCss_ketchup",
-      returnSection:"reactCss_pattie",
-      exportsSection:"reactCss_footer"
-
+      filenameSection:"reactFridge_header",
+      filename:"reactFridge_name",
+      importsSection:"reactFridge_salad",
+      definitionSection:"reactFridge_ketchup",
+      returnSection:"reactFridge_pattie",
+      exportsSection:"reactFridge_footer"
+      
     },
     {
-      componentName:"Public",
-      filenameSection:"reactCss_header",
-      filename:"reactCss_name",
-      importsSection:"reactCss_salad",
-      definitionSection:"reactCss_ketchup",
-      returnSection:"reactCss_pattie",
-      exportsSection:"reactCss_footer"
-
+      componentName:"Window",
+      filenameSection:"reactWindow_header",
+      filename:"reactWindow_name",
+      importsSection:"reactWindow_salad",
+      definitionSection:"reactWindow_ketchup",
+      returnSection:"reactWindow_pattie",
+      exportsSection:"reactWindow_footer"
     },
+        {
+          componentName:"burger",
+          filenameSection:"reactBurger_bun",
+          filename:"reactBurger_name",
+          importsSection:"reactBurger_salad",
+          definitionSection:"reactBurger_ketchup",
+          returnSection:"reactBurger_pattie",
+          exportsSection:"reactBurger_bunBottom"
+    
+        },
   ]
 
 };
