@@ -5,11 +5,10 @@
 .reactWindow_footer,.reactWindow_header{
     padding:1.5rem;
     text-align:center;
-    background:darkblue;
+    background:lightblue;
 
 }
-.reactWindow_footer{border-radius:0 0 0.8rem 0.8rem;}
-.reactWindow_header{border-radius:0.8rem 0.8rem 0 0;}
+
 .reactWindow_salad
 ,.reactWindow_ketchup
 ,.reactWindow_pattie
@@ -19,7 +18,7 @@
   color:	#f8f8ff;
 }
 .reactWindow_name{text-align:center;}
-.reactWindow_salad {background:red;}
+.reactWindow_salad {background:lightblue;}
 .reactWindow_ketchup{background:lightblue;}
 .reactWindow_pattie{background:lightblue;}
 .reactWindow_footer{background:lightblue;;}

@@ -85,6 +85,15 @@ class Questions extends React.Component {
           answer: "none yet",
           category: "react",
           tag: ["react", "javascript"]
+        },
+        {
+          id: 7,
+          title:
+            "Linting",
+          description: "I noticed that I get errors when I try to publish to netlify",
+          answer: "none yet",
+          category: "react",
+          tag: ["react", "javascript"]
         }
       ]
     };

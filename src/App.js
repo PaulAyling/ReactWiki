@@ -24,7 +24,7 @@ import StateExamples from "./components/pages/stateExamples";
 function App() {
   return (
     <div>
-      {/* <FunctionalContext> */}
+    
       <Router>
         {/* <FunctionalState> */}
         <Navbar />
@@ -35,17 +35,6 @@ function App() {
           <Route exact path="/questions" component={Questions} />
 
           <Route exact path="/syntax" component={Syntax} />
-          <Route
-            exact
-            path="/reactburgersboring"
-            component={ReactBurgersBoring}
-          />
-          <Route exact path="/reactburgers" component={ReactBurgers} />
-          <Route
-            exact
-            path="/reactburgerrestaurant"
-            component={ReactBurgerRestaurant}
-          />
           <Route
             exact
             path="/stateexamples" component={StateExamples}

@@ -1,6 +1,7 @@
 const reactBurgerData = {
   data: [
     {
+      componentName:"menu",
       filename:"App.js",
       importPaths:`import React from 'react';
 import BookList from './components/BookList';
@@ -21,6 +22,7 @@ import ThemeContextProvider from './contexts/ThemeContext';`,
       exportComponent:"export default App;"
     },
     {
+      componentName:"paint",
       filename:"CSS",
       importPaths:``,
       defineComponent:`style.css`,
@@ -31,6 +33,7 @@ import ThemeContextProvider from './contexts/ThemeContext';`,
     },
     
     {
+      componentName:"fridge",
       filename:"myFile.json",
       importPaths:``,
       defineComponent:``,
@@ -40,6 +43,7 @@ import ThemeContextProvider from './contexts/ThemeContext';`,
       exportComponent:""
     },
     {
+        componentName:"window",
       filename:"Public",
       importPaths:``,
       defineComponent:`favicon.ico
@@ -126,8 +130,8 @@ return (
   ],
   styles:[
     {
+      component_Name:"paint",
       componentBorder: "reactCss_border",
-      componentName:"CSS",
       filenameSection:"reactCss_header",
       filename:"reactCss_name",
       importsSection:"reactCss_salad",
@@ -137,8 +141,8 @@ return (
       
     },
     {
+      component_Name:"fridge",
       componentBorder: "reactFridge_border",
-      componentName:"Fridge",
       filenameSection:"reactFridge_header",
       filename:"reactFridge_name",
       importsSection:"reactFridge_salad",
@@ -148,7 +152,7 @@ return (
       
     },
     {
-      componentName:"Window",
+      component_Name:"window",
       filenameSection:"reactWindow_header",
       filename:"reactWindow_name",
       importsSection:"reactWindow_salad",
@@ -156,16 +160,26 @@ return (
       returnSection:"reactWindow_pattie",
       exportsSection:"reactWindow_footer"
     },
-        {
-          componentName:"burger",
-          filenameSection:"reactBurger_bun",
-          filename:"reactBurger_name",
-          importsSection:"reactBurger_salad",
-          definitionSection:"reactBurger_ketchup",
-          returnSection:"reactBurger_pattie",
-          exportsSection:"reactBurger_bunBottom"
-    
-        },
+      {
+        component_Name:"menu",
+        filenameSection:"reactBurger_bun",
+        filename:"reactBurger_name",
+        importsSection:"reactBurger_salad",
+        definitionSection:"reactBurger_ketchup",
+        returnSection:"reactBurger_pattie",
+        exportsSection:"reactBurger_bunBottom"
+  
+      },
+      {
+        component_Name:"burger",
+        filenameSection:"reactBurger_bun",
+        filename:"reactBurger_name",
+        importsSection:"reactBurger_salad",
+        definitionSection:"reactBurger_ketchup",
+        returnSection:"reactBurger_pattie",
+        exportsSection:"reactBurger_bunBottom"
+  
+      },
   ]
 
 };
